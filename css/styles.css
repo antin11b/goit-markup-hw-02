@@ -20,13 +20,10 @@ body {
 }
 
 .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
+/* INDEX.HTML */
 /* ---Logo--- */
 
 .logo-top {
@@ -44,21 +41,28 @@ body {
 
 /* ---Site Nav--- */
 
-.site-nav .link {
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .header-link {
   color: var(--title-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.contacts .link {
+.contacts .header-link {
   color: var(--primary-text-color);
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.site-nav .header-link.current {
+  color: var(--accent-color);
+}
+
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
 
@@ -92,6 +96,18 @@ body {
   cursor: pointer;
 }
 
+.button:hover,
+.button.focus {
+  background-color: #188ce8;
+}
+
+.radio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
 /* ---Features--- */
 
 .features-subtitle {
@@ -103,7 +119,7 @@ body {
 
 /* ---Works--- */
 
-.works-title,
+.whatwedo-title,
 .team-title {
   font-size: 36px;
   line-height: 1.17;
@@ -147,11 +163,26 @@ body {
 }
 
 .footer-link {
-  text-decoration: none;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .address-link {
   color: var(--primary-white-color);
+}
+
+/* PORTFOLIO.HTML */
+
+.work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.work-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
 }
